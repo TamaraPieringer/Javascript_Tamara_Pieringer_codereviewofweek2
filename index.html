@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Roll of the dice</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="javascript.js"></script>
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0" -->
+</head>
+<body onload="changeColor()">
+
+	<!-- dynamischer Background -->
+	
+		<header class="image">
+			
+		</header>
+
+		<div class="startplay">
+
+			<button id="startPlay1" onclick="wanttoplayOne()">Do you want to play?</button>
+			<h2 id="spielStart1"></h2>
+
+			<p id="against">against</p>
+			
+			<h2 id="spielStart2"></h2>
+			<button id="startPlay2" onclick="wanttoplayTwo()">Do you want to play?</button>
+			
+		</div>
+		
+		<div class="gladiators">
+
+			<div class="gladiatorLeft">
+				<img id="Wurefel1" src="dollar_drawn.png" width="100">
+				<div id="dice1" class="dice">0</div>
+				<div id="dice2" class="dice">0</div>
+				<div id="dice3" class="dice">0</div>
+				<button onclick="rolldiceOne()">Roll Dice</button>
+				<h4 id="statusOne" style="clear left"></h4>
+
+			</div>
+
+			<div class="gladiatorRight">
+				<img id="Wuerfel2" src="dollar_drawn.png" width="100">
+				<div id="dice4" class="dice">0</div>
+				<div id="dice5" class="dice">0</div>	
+				<div id="dice6" class="dice">0</div>			
+				<button onclick="rolldiceTwo()">Roll Dice</button>
+				<h4 id="statusTwo" style="clear left"></h4>
+			</div>
+			
+		</div>
+
+		
+		<footer class="ratingCopyright">
+
+			<div id="ratingpoints">
+				<p>10.345 Ratings</p>
+			</div>
+
+			<div id="stars">
+				<span>★</span>
+				<span>★</span>
+				<span>★</span>
+				<span>★</span>
+				<span>☆</span>
+			</div>
+
+			<div id="copyright">
+				<p>&copy; All Rights reserved, Tamara Pieringer</p>	
+			</div>
+
+		</footer>
+
+	
+
+</body>
+</html>
